@@ -13,14 +13,14 @@ Each input file for this section has the following structure:
 
 <p align="center"><img src="https://latex.codecogs.com/svg.image?\\\text{start&space;A}&space;\\<&space;\text{row&space;1&space;of&space;matrix}&space;>\\<&space;\text{row&space;2&space;of&space;matrix}&space;>\\\cdots&space;\\<&space;\text{row&space;n&space;of&space;matrix}&space;>\\\text{end&space;A}&space;\\\text{start&space;b}&space;\\<&space;\text{vector&space;b}&space;>\\\text{end&space;b}&space;\\\text{start&space;c}&space;\\&space;<&space;\text{vector&space;c}&space;>\\\text{end&space;c}&space;\\&space;&space;" /> </p>
 
-See [a relative link](input/sample-input-simplex.txt) for reference.
+See [sample-input-simplex.txt](input/sample-input-simplex.txt) for reference.
 
 ### Output Format
 - If the optimal solution exists, then the optimal value if given as output along with the vector of optimal values of the variables.
 - If there is unbounded solution, outputs ”Unbounded”.
 - If infeasible, outputs ”Infeasible”.
 
-See [a relative link](output/sample-output-simplex.txt) for reference.
+See [sample-output-simplex.txt](output/sample-output-simplex.txt) for reference.
 
 ## Branch and Bound
 
@@ -34,7 +34,7 @@ Each input file for this section has the following structure:
 
 <p align="center"><img src="https://latex.codecogs.com/svg.image?\\\text{start&space;A}&space;\\<&space;\text{row&space;1&space;of&space;matrix}&space;>\\<&space;\text{row&space;2&space;of&space;matrix}&space;>\\\cdots&space;\\<&space;\text{row&space;n&space;of&space;matrix}&space;>\\\text{end&space;A}&space;\\" /> </p>
 
-See [a relative link](input/sample-input-bb.txt) for reference.
+See [sample-input-bb.txt](input/sample-input-bb.txt) for reference.
 
 ### Output Format
 - If a tour exists: 
@@ -43,7 +43,7 @@ See [a relative link](input/sample-input-bb.txt) for reference.
   - (c) Outputs the number of nodes explored (or output the number of LP relaxations solved).
 - If there does not exist any tour, then outputs ”Infeasible Problem”, the number of nodes explored.
 
-See [a relative link](output/sample-output-bb.txt) for reference.
+See [sample-output-bb.txt](output/sample-output-bb.txt) for reference.
 
 ## Ellipsoid Method
 Ellipsoid method is implemented to solve given optimization problem. We use sliding objective method discussed in to find the solution.
@@ -56,13 +56,13 @@ Each input file for this section has the following structure:
 
 <p align="center"><img src="https://latex.codecogs.com/svg.image?\\\text{start&space;A}&space;\\<&space;\text{row&space;1&space;of&space;matrix}&space;>\\<&space;\text{row&space;2&space;of&space;matrix}&space;>\\\cdots&space;\\<&space;\text{row&space;n&space;of&space;matrix}&space;>\\\text{end&space;A}&space;\\\text{start&space;b}&space;\\<&space;\text{vector&space;b}&space;>\\\text{end&space;b}&space;\\\text{start&space;c}&space;\\&space;<&space;\text{vector&space;c}&space;>\\\text{end&space;c}&space;\\&space;&space;" /> </p>
 
-See [a relative link](input/sample-input-ellipsoid.txt) for reference.
+See [sample-input-ellipsoid.txt](input/sample-input-ellipsoid.txt) for reference.
 
 ### Output Format
 - If the optimal solution exists, then the optimal value if given as output along with the vector of optimal values of the variables.
 - If infeasible, outputs ”Infeasible”.
 
-See [a relative link](output/sample-output-ellipsoid.txt) for reference.
+See [sample-output-ellipsoid.txt](output/sample-output-ellipsoid.txt) for reference.
 
 ## Cutting Plane Method
 Gomory’s cutting plane method is implemented to solve given integer programming problem. To solve LP relaxation problem, the Simplex Algorithm routing developed above is used.
@@ -75,7 +75,7 @@ Each input file for this section has the following structure:
 
 <p align="center"><img src="https://latex.codecogs.com/svg.image?\\\text{start&space;A}&space;\\<&space;\text{row&space;1&space;of&space;matrix}&space;>\\<&space;\text{row&space;2&space;of&space;matrix}&space;>\\\cdots&space;\\<&space;\text{row&space;n&space;of&space;matrix}&space;>\\\text{end&space;A}&space;\\\text{start&space;b}&space;\\<&space;\text{vector&space;b}&space;>\\\text{end&space;b}&space;\\\text{start&space;c}&space;\\&space;<&space;\text{vector&space;c}&space;>\\\text{end&space;c}&space;\\&space;&space;" /> </p>
 
-See [a relative link](input/sample-input-cutting-plane.txt) for reference.
+See [sample-input-cutting-plane.txt](input/sample-input-cutting-plane.txt) for reference.
 
 ### Output format
 - If solution exists,
@@ -85,4 +85,4 @@ See [a relative link](input/sample-input-cutting-plane.txt) for reference.
 - In case of unbounded solution, outputs ”Unbounded” and the number of cutting planes generated (or the number of LP relaxations solved).
 - In case of no solution outputs ”Infeasible Solution” and the number of cutting planes generated (or the number of LP relaxations solved).
 
-See [a relative link](output/sample-output-cutting-plane.txt) for reference.
+See [sample-output-cutting-plane.txt](output/sample-output-cutting-plane.txt) for reference.
