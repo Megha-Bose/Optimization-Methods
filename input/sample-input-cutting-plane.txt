@@ -1,0 +1,10 @@
+start A
+1 7
+1 0
+end A
+start b
+17.5 3.5
+end b
+start c
+1 10
+end c
