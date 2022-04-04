@@ -1,0 +1,10 @@
+start A
+-2 -1
+-1 -7
+end A
+start b
+-4 -7
+end b
+start c
+1 1
+end c

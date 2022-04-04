@@ -1,0 +1,11 @@
+start A
+1 1 2
+1 1 -1
+-1 1 1
+end A
+start b
+9 2 4
+end b
+start c
+1 1 -4
+end c
