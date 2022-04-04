@@ -5,6 +5,9 @@ import copy
 import sys
 import math
 
+INPUT_PATH = "input/cutting_plane/"
+OUTPUT_PATH = "output/cutting_plane/"
+
 # taking A, b c as input, converting to canonical form in two-phased method
 def initialize(ip_file):
     inp = open(ip_file, "r")
@@ -256,12 +259,9 @@ def lp_solve(A_matrix, b, c, B, vars, num_artificial, num_slack):
     message, opt_val, opt_val_vector, basic_variables, x_B, c_j, A_matrix = simplex_iteration(basic_variables, x_B, c_j, A_matrix, c, vars, itr_num = 1)
     return message, opt_val, opt_val_vector, basic_variables, x_B, c_j, A_matrix
 
-INPUT_PATH = "input/cutting_plane/"
-OUTPUT_PATH = "output/cutting_plane/"
-
 if __name__ == "__main__":
-    ip_file = INPUT_PATH +  "sample_input_simplex.txt"
-    op_file = OUTPUT_PATH + "sample_output_simplex.txt"
+    ip_file = INPUT_PATH +  "sample_input_cutting_plane.txt"
+    op_file = OUTPUT_PATH + "sample_output_cutting_plane.txt"
     if len(sys.argv)>1:
         ip_file = INPUT_PATH + sys.argv[1]
         op_file = OUTPUT_PATH + sys.argv[1]

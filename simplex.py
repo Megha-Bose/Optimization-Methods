@@ -4,6 +4,9 @@ import numpy as np
 import copy
 import sys
 
+INPUT_PATH = "input/simplex/"
+OUTPUT_PATH = "output/simplex/"
+
 # taking A, b c as input, converting to canonical form in two-phased method
 def initialize(ip_file):
     inp = open(ip_file, "r")
@@ -250,9 +253,6 @@ def lp_solve(A_matrix, b, c, B, vars, num_artificial, num_slack):
 
     message, opt_val, opt_val_vector, basic_variables, x_B, c_j, A_matrix = simplex_iteration(basic_variables, x_B, c_j, A_matrix, c, vars, itr_num = 1)
     return message, opt_val, opt_val_vector
-
-INPUT_PATH = "input/simplex/"
-OUTPUT_PATH = "output/simplex/"
 
 if __name__ == "__main__":
     ip_file = INPUT_PATH +  "sample_input_simplex.txt"
