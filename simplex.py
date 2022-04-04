@@ -74,11 +74,11 @@ def initialize(ip_file):
 
 # evaluation in each iteration
 def simplex_iteration(basic_variables, x_B, c_j, A_matrix, c, vars, itr_num):
-    # print("Simplex Iteration Number: ", itr_num)
-    # print("A: ", A_matrix)
-    # print("B: ", basic_variables)
-    # print("x_B: ", x_B)
-    # print("c_j: ", c_j)
+    print("Simplex Iteration Number: ", itr_num)
+    print("A: ", A_matrix)
+    print("B: ", basic_variables)
+    print("x_B: ", x_B)
+    print("c_j: ", c_j)
 
     c_B = []
     # calculating c_B from c_j
@@ -212,7 +212,7 @@ def print_results(message, opt_val, opt_vect, num_x):
     print(x)
 
 
-def solve(A_matrix, b, c, B, vars, num_artificial, num_slack):
+def lp_solve(A_matrix, b, c, B, vars, num_artificial, num_slack):
     opt_val = 0.0
     opt_val_vector = [0.0] * num_col_A
     # initializing basic variables, x_B, c_j
@@ -253,7 +253,7 @@ def solve(A_matrix, b, c, B, vars, num_artificial, num_slack):
 
 
 if __name__ == "__main__":
-    ip_file = "input/sample-input-simplex.txt"
+    ip_file = "input/sample_input_simplex.txt"
     if len(sys.argv)>1:
         ip_file = sys.argv[1]
     A, num_row_A, num_col_A, b, c, num_slack, num_artificial, B, vars = initialize(ip_file)
@@ -261,5 +261,5 @@ if __name__ == "__main__":
     # print(num_row_A, num_col_A)
     # print(num_slack, num_artificial)
     # print(B, vars)
-    message, opt_val, opt_val_vector = solve(A, b, c, B, vars, num_artificial, num_slack)
+    message, opt_val, opt_val_vector = lp_solve(A, b, c, B, vars, num_artificial, num_slack)
     print_results(message, opt_val, opt_val_vector, num_col_A)
