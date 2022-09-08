@@ -45,25 +45,6 @@ See [sample_input_bb.txt](input/bb/sample_input_bb.txt) for reference.
 
 See [sample_output_bb.txt](output/bb/sample_output_bb.txt) for reference.
 
-## Ellipsoid Method
-Ellipsoid method is implemented to solve given optimization problem. We use sliding objective method discussed in to find the solution.
-
-<p align="center"><img src="https://latex.codecogs.com/svg.image?\text{min&space;}&space;\mathbf{c}^T\mathbf{x}\\\text{subject&space;to&space;}&space;\textit{A}\mathbf{x}\leq&space;\textbf{b}\\\text{\hspace{5em}}\mathbf{x}\geq&space;0&space;" /> </p>
-
-### Input format
-
-Each input file for this section has the following structure:
-
-<p align="center"><img src="https://latex.codecogs.com/svg.image?\\\text{start&space;A}&space;\\<&space;\text{row&space;1&space;of&space;matrix}&space;>\\<&space;\text{row&space;2&space;of&space;matrix}&space;>\\\cdots&space;\\<&space;\text{row&space;n&space;of&space;matrix}&space;>\\\text{end&space;A}&space;\\\text{start&space;b}&space;\\<&space;\text{vector&space;b}&space;>\\\text{end&space;b}&space;\\\text{start&space;c}&space;\\&space;<&space;\text{vector&space;c}&space;>\\\text{end&space;c}&space;\\&space;&space;" /> </p>
-
-See [sample_input_ellipsoid.txt](input/ellipsoid/sample_input_ellipsoid.txt) for reference.
-
-### Output Format
-- If the optimal solution exists, then the optimal value if given as output along with the vector of optimal values of the variables.
-- If infeasible, outputs ”Infeasible”.
-
-See [sample_output_ellipsoid.txt](output/ellipsoid/sample_output_ellipsoid.txt) for reference.
-
 ## Cutting Plane Method
 Gomory’s cutting plane method is implemented to solve given integer programming problem. To solve LP relaxation problem, the Simplex Algorithm routing developed above is used.
 
